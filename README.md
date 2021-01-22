@@ -74,17 +74,22 @@ class Upload extends BaseController
         $url2 = Filesystem::getAdapter()->getUrl($path2);
         $url3 = Filesystem::disk('oss')->getAdapter()->getUrl($path3);
 
-        return compact('url1', 'url2', 'url3');
+        return compact('path1','url1', 'path2', 'url2', 'path3', 'url3');
     }
 }
 
 ```
-Response
+## Response
 ```json
 {
-	"url1": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/31e9ed3ad43da758694971af4957f0bf.json",
-	"url2": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/item.json",
-	"url3": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/31e9ed3ad43da758694971af4957f0bf.json"
+    "path1": "test/path/20210122/56737eece60bd855c78603848edcb10a.json",
+    "url1": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/56737eece60bd855c78603848edcb10a.json",
+    
+    "path2": "test/path/item.json",
+    "url2": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/item.json",
+    
+    "path3": "test/path/20210122/56737eece60bd855c78603848edcb10a.json",
+    "url3": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/56737eece60bd855c78603848edcb10a.json"
 }
 ```
 
