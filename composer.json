@@ -1,0 +1,27 @@
+{
+    "name": "enoliu/thinkphp-oss",
+    "description": "Thinkphp Flysystem for the AliYun OSS storage.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enoliu",
+            "email": "595929049@qq.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0.0",
+        "enoliu/flysystem-oss": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enoliu\\Thinkphp\\Oss\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Enoliu\\Thinkphp\\Oss\\OssService"
+            ]
+        }
+    }
+}
