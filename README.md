@@ -79,6 +79,14 @@ class Upload extends BaseController
 }
 
 ```
+Response
+```json
+{
+	"url1": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/31e9ed3ad43da758694971af4957f0bf.json",
+	"url2": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/item.json",
+	"url3": "http://lo***e52.oss-cn-beijing.aliyuncs.com/test/path/20210122/31e9ed3ad43da758694971af4957f0bf.json"
+}
+```
 
 ## Contributing
 
