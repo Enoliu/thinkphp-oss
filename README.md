@@ -93,6 +93,19 @@ class Upload extends BaseController
 }
 ```
 
+## More
+```php
+use think\facade\Filesystem;
+
+$config = [
+    'dir'      => 'upload/tmp',
+    'expire'   => 60 * 60,
+    'callback' => 'http://www.baidu.com',
+    'maxSize'  => 10 * 1024 * 1024
+];
+array Filesystem::getAdapter()->directUpload($config);
+```
+
 ## Contributing
 
 You can contribute in one of three ways:
