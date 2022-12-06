@@ -95,7 +95,7 @@ class Upload extends BaseController
 
 ## More
 ```php
-use think\facade\Filesystem;
+use Enoliu\Thinkphp\Oss\Facade\Filesystem;
 
 $config = [
     'dir'      => 'upload/tmp',
