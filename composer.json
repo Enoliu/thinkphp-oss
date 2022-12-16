@@ -10,7 +10,7 @@
     ],
     "require": {
         "topthink/framework": "^6.0.0",
-        "enoliu/flysystem-oss": "^1.0"
+        "enoliu/flysystem-oss": "dev-main"
     },
     "autoload": {
         "psr-4": {
@@ -23,5 +23,22 @@
                 "Enoliu\\Thinkphp\\Oss\\OssService"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/jiangslee/flysystem-oss"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jiangslee/thinkphp6-filesystem-oss-adapter"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org",
+            "exclude": ["enoliu/flysystem-oss", "iidestiny/flysystem-oss"]
+        }
+    ]
 }
